@@ -145,3 +145,36 @@ font-size:24px;
 }
 
 }
+.main-image{
+
+max-width:600px;
+width:100%;
+
+cursor:pointer;
+
+}
+
+
+.filter{
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.filter button{
+
+padding:10px 20px;
+
+margin:5px;
+
+background:#18352a;
+
+color:white;
+
+border:none;
+
+cursor:pointer;
+
+}

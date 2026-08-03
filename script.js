@@ -1,46 +1,53 @@
 fetch("products.json")
 
-.then(response => response.json())
+.then(r=>r.json())
 
-.then(products => {
+.then(products=>{
 
 
 const area =
 document.getElementById("products");
 
 
-products.forEach(product=>{
-
-
-let sold =
-product.sold ?
-"<p class='sold'>SOLD OUT</p>"
-:"";
+products.forEach((p,index)=>{
 
 
 area.innerHTML += `
 
 <div class="card">
 
-<img src="${product.image}">
 
-<h3>${product.name}</h3>
+<img src="${p.image}">
+
+
+<h3>${p.name}</h3>
+
 
 <p>
-${product.brand}<br>
-${product.year}
+${p.brand}<br>
+${p.year}
 </p>
 
 
 <p class="price">
-${product.price}
+${p.price}
 </p>
 
-${sold}
+
+${p.sold?
+"<p class='sold'>SOLD OUT</p>"
+:""}
+
+
+<a href="product.html?id=${index}">
+詳細を見る
+</a>
+
 
 </div>
 
 `;
+
 
 });
 

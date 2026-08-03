@@ -66,9 +66,18 @@ document.getElementById("detail").innerHTML=`
 <h2>${p.name}</h2>
 
 
-<img class="main-image"
-src="${p.image}">
+let photos="";
 
+p.images.forEach(img=>{
+
+photos +=
+
+`
+<img class="gallery"
+src="${img}">
+`;
+
+});
 
 <h3>商品情報</h3>
 

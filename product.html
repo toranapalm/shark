@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Shark | Product</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>Shark</h1>
+
+<p>Vintage Pens & Stationery</p>
+
+</header>
+
+
+
+<main id="detail" class="detail">
+
+</main>
+
+
+
+<footer>
+
+<p>
+© Shark Vintage Pens & Stationery
+</p>
+
+</footer>
+
+
+<script>
+
+
+const id =
+new URLSearchParams(location.search)
+.get("id");
+
+
+
+fetch("products.json")
+
+.then(r=>r.json())
+
+.then(products=>{
+
+
+const p=products[id];
+
+
+document.getElementById("detail").innerHTML=`
+
+<h2>${p.name}</h2>
+
+
+<img class="main-image"
+src="${p.image}">
+
+
+<h3>商品情報</h3>
+
+
+<p>
+ブランド：${p.brand}<br>
+年代：${p.year}<br>
+状態：${p.condition}<br>
+価格：${p.price}
+</p>
+
+
+<p>
+${p.description}
+</p>
+
+
+${p.sold ?
+"<h2 class='sold'>SOLD OUT</h2>"
+:
+"<button>お問い合わせ</button>"
+}
+
+
+`;
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>

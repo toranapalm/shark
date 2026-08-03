@@ -1,29 +1,28 @@
 [
 {
-"name":"Pelikan M400",
-"year":"1980年代",
+"name":"Pelikan M400 Green Stripe",
 "brand":"Pelikan",
+"year":"1980年代",
+"condition":"A（美品）",
 "price":"18,000円",
-"image":"images/products/sample.jpg",
+"description":
+"洗浄・筆記確認済み。滑らかな書き味のヴィンテージ万年筆です。",
+"image":
+"images/products/pelikan.jpg",
 "sold":false
 },
 
 {
-"name":"PILOT Elite",
-"year":"1970年代",
+"name":"PILOT Elite 1970",
 "brand":"PILOT",
-"price":"9,800円",
-"image":"images/products/sample.jpg",
-"sold":false
-},
-
-{
-"name":"PARKER 75",
 "year":"1970年代",
-"brand":"PARKER",
-"price":"22,000円",
-"image":"images/products/sample.jpg",
-"sold":true
+"condition":"B（良好）",
+"price":"9,800円",
+"description":
+"コンパクトで携帯性に優れた名品です。",
+"image":
+"images/products/pilot.jpg",
+"sold":false
 }
 
 ]

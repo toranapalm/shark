@@ -2,27 +2,42 @@
 {
 "name":"Pelikan M400 Green Stripe",
 "brand":"Pelikan",
+"category":"万年筆",
 "year":"1980年代",
 "condition":"A（美品）",
 "price":"18,000円",
+
+"status":"販売中",
+
+"images":[
+"images/products/pelikan1.jpg",
+"images/products/pelikan2.jpg",
+"images/products/pelikan3.jpg"
+],
+
 "description":
-"洗浄・筆記確認済み。滑らかな書き味のヴィンテージ万年筆です。",
-"image":
-"images/products/pelikan.jpg",
-"sold":false
+"洗浄・筆記確認済み。ヴィンテージらしい味わいのある一本です。"
+
 },
 
 {
-"name":"PILOT Elite 1970",
+"name":"PILOT Elite",
 "brand":"PILOT",
+"category":"万年筆",
 "year":"1970年代",
 "condition":"B（良好）",
 "price":"9,800円",
+
+"status":"SOLD OUT",
+
+"images":[
+"images/products/pilot1.jpg",
+"images/products/pilot2.jpg"
+],
+
 "description":
-"コンパクトで携帯性に優れた名品です。",
-"image":
-"images/products/pilot.jpg",
-"sold":false
+"携帯性に優れた国産ヴィンテージ万年筆です。"
+
 }
 
 ]

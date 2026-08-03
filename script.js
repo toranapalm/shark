@@ -14,7 +14,7 @@ products.forEach((p,index)=>{
 
 area.innerHTML += `
 
-<div class="card">
+<div class="card" data-brand="${p.brand}">
 
 
 <img src="${p.image}">

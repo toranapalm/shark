@@ -1,0 +1,29 @@
+[
+{
+"name":"Pelikan M400",
+"year":"1980年代",
+"brand":"Pelikan",
+"price":"18,000円",
+"image":"images/products/sample.jpg",
+"sold":false
+},
+
+{
+"name":"PILOT Elite",
+"year":"1970年代",
+"brand":"PILOT",
+"price":"9,800円",
+"image":"images/products/sample.jpg",
+"sold":false
+},
+
+{
+"name":"PARKER 75",
+"year":"1970年代",
+"brand":"PARKER",
+"price":"22,000円",
+"image":"images/products/sample.jpg",
+"sold":true
+}
+
+]

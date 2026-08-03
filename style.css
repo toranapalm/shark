@@ -177,4 +177,23 @@ border:none;
 
 cursor:pointer;
 
+}.status{
+
+font-size:22px;
+font-weight:bold;
+
+}
+
+
+.sold{
+
+color:#b00000;
+
+}
+
+
+.available{
+
+color:#18352a;
+
 }

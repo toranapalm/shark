@@ -46,10 +46,30 @@ ${p.sold?
 
 </div>
 
-`;
+function filterBrand(brand){
+
+const cards =
+document.querySelectorAll(".card");
+
+
+cards.forEach(card=>{
+
+
+if(
+brand=="all" ||
+card.dataset.brand==brand
+){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
 
 
 });
 
 
-});
+}

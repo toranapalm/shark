@@ -1,11 +1,5 @@
 fetch("products.json")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("商品データを読み込めませんでした。");
-    }
-
-    return response.json();
-  })
+  .then((response) => response.json())
   .then((products) => {
     const area = document.getElementById("products");
 
@@ -17,11 +11,7 @@ fetch("products.json")
 
       area.innerHTML += `
         <div class="card" data-brand="${product.brand}">
-          <img
-            src="${product.image}"
-            alt="${product.name}"
-            onerror="this.alt='画像を表示できません';"
-          >
+          <img src="${product.image}" alt="${product.name}">
 
           <h3>${product.name}</h3>
 
@@ -44,23 +34,17 @@ fetch("products.json")
   .catch((error) => {
     console.error(error);
 
-    const area = document.getElementById("products");
-
-    area.innerHTML = `
-      <p>
-        商品を表示できませんでした。products.jsonの内容をご確認ください。
-      </p>
-    `;
+    document.getElementById("products").innerHTML =
+      "<p>商品を表示できませんでした。</p>";
   });
 
 function filterBrand(brand) {
   const cards = document.querySelectorAll(".card");
 
   cards.forEach((card) => {
-    if (brand === "all" || card.dataset.brand === brand) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
+    card.style.display =
+      brand === "all" || card.dataset.brand === brand
+        ? "block"
+        : "none";
   });
 }

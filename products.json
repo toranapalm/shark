@@ -1,5 +1,4 @@
 [
-  
   {
     "name": "PILOT Elite 18K",
     "brand": "PILOT",
@@ -9,7 +8,8 @@
     "price": "5,800円",
     "status": "販売中",
     "image": "images/products/pilot-elite18k.jpg",
-    "description": "コンパクトサイズの人気モデル。18Kペン先。"
+    "description": "コンパクトサイズの人気モデル。18Kペン先。",
+    "sortDate": "2026-07-21"
   },
   {
     "name": "PARKER 45 Flighter",
@@ -20,7 +20,8 @@
     "price": "8,800円",
     "status": "販売中",
     "image": "images/products/parker45.jpg",
-    "description": "ステンレスボディの定番モデル。"
+    "description": "ステンレスボディの定番モデル。",
+    "sortDate": "2026-07-22"
   },
   {
     "name": "PLATINUM #3776",
@@ -31,7 +32,8 @@
     "price": "12,800円",
     "status": "販売中",
     "image": "images/products/3776.jpg",
-    "description": "14Kペン先。人気の国産万年筆。"
+    "description": "14Kペン先。人気の国産万年筆。",
+    "sortDate": "2026-07-23"
   },
   {
     "name": "SAILOR Profit 21",
@@ -42,7 +44,8 @@
     "price": "18,000円",
     "status": "販売中",
     "image": "images/products/profit21.jpg",
-    "description": "21Kペン先。滑らかな書き味。"
+    "description": "21Kペン先。滑らかな書き味。",
+    "sortDate": "2026-07-24"
   },
   {
     "name": "Pelikan M200 Green",
@@ -53,7 +56,8 @@
     "price": "22,000円",
     "status": "販売中",
     "image": "images/products/m200.jpg",
-    "description": "グリーンストライプの人気モデル。"
+    "description": "グリーンストライプの人気モデル。",
+    "sortDate": "2026-07-25"
   },
   {
     "name": "LAMY 2000",
@@ -64,7 +68,8 @@
     "price": "28,000円",
     "status": "販売中",
     "image": "images/products/lamy2000.jpg",
-    "description": "バウハウスデザインの名作。"
+    "description": "バウハウスデザインの名作。",
+    "sortDate": "2026-07-26"
   },
   {
     "name": "Waterman Carène",
@@ -75,7 +80,8 @@
     "price": "35,000円",
     "status": "販売中",
     "image": "images/products/carene.jpg",
-    "description": "美しい流線形デザイン。"
+    "description": "美しい流線形デザイン。",
+    "sortDate": "2026-07-27"
   },
   {
     "name": "Pelikan M400 Green Stripe",
@@ -86,7 +92,8 @@
     "price": "48,000円",
     "status": "販売中",
     "image": "images/products/m400.jpg",
-    "description": "14Cペン先。人気のヴィンテージ。"
+    "description": "14Cペン先。人気のヴィンテージ。",
+    "sortDate": "2026-07-28"
   },
   {
     "name": "PARKER Duofold Centennial",
@@ -97,7 +104,8 @@
     "price": "68,000円",
     "status": "販売中",
     "image": "images/products/duofold.jpg",
-    "description": "英国を代表するフラッグシップモデル。"
+    "description": "英国を代表するフラッグシップモデル。",
+    "sortDate": "2026-07-29"
   },
   {
     "name": "Montblanc Meisterstück 146",
@@ -108,7 +116,8 @@
     "price": "88,000円",
     "status": "販売中",
     "image": "images/products/146.jpg",
-    "description": "14Cニブ搭載の人気モデル。"
+    "description": "14Cニブ搭載の人気モデル。",
+    "sortDate": "2026-07-30"
   },
   {
     "name": "Montblanc Meisterstück 149",
@@ -119,7 +128,8 @@
     "price": "138,000円",
     "status": "販売中",
     "image": "images/products/149.jpg",
-    "description": "18Cニブ搭載。大型フラッグシップ。"
+    "description": "18Cニブ搭載。大型フラッグシップ。",
+    "sortDate": "2026-07-31"
   },
   {
     "name": "Pelikan Toledo M700",
@@ -130,7 +140,8 @@
     "price": "180,000円",
     "status": "販売中",
     "image": "images/products/toledo.jpg",
-    "description": "銀装飾が美しい高級モデル。"
+    "description": "銀装飾が美しい高級モデル。",
+    "sortDate": "2026-08-01"
   },
   {
     "name": "Namiki Yukari Royale",
@@ -141,7 +152,8 @@
     "price": "280,000円",
     "status": "販売中",
     "image": "images/products/yukari.jpg",
-    "description": "蒔絵仕上げの高級モデル。"
+    "description": "蒔絵仕上げの高級モデル。",
+    "sortDate": "2026-08-02"
   },
   {
     "name": "Montblanc Hemingway Limited Edition",
@@ -152,7 +164,8 @@
     "price": "398,000円",
     "status": "販売中",
     "image": "images/products/hemingway.jpg",
-    "description": "人気の作家シリーズ限定モデル。"
+    "description": "人気の作家シリーズ限定モデル。",
+    "sortDate": "2026-08-03"
   },
   {
     "name": "Montblanc 149 Celluloid",
@@ -163,9 +176,9 @@
     "price": "498,000円",
     "status": "販売中",
     "image": "images/products/149-celluloid.jpg",
-    "description": "希少なヴィンテージセルロイドモデル。"
+    "description": "希少なヴィンテージセルロイドモデル。",
+    "sortDate": "2026-08-04"
   },
-
   {
     "name": "MONTBLANC 146",
     "brand": "MONTBLANC",

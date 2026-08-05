@@ -1,115 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-<title>Shark | Product</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>商品詳細 | Shark</title>
+  <meta name="description" content="Sharkの商品詳細ページです。">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/shark-logo.png" alt="Shark Vintage Pens & Stationery">
+      </a>
+      <nav class="site-nav">
+        <a href="index.html">HOME</a>
+        <a href="index.html#collection">COLLECTION</a>
+        <a href="index.html#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
 
+  <main id="detail" class="detail-page">
+    <p>商品を読み込んでいます。</p>
+  </main>
 
-<header>
+  <footer class="site-footer">
+    <p>© Shark Vintage Pens & Stationery</p>
+  </footer>
 
-<h1>Shark</h1>
+  <script>
+    const detail = document.getElementById("detail");
+    const id = Number(new URLSearchParams(location.search).get("id"));
 
-<p>Vintage Pens & Stationery</p>
+    const escapeHtml = (value) => String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
 
-</header>
+    fetch("products.json")
+      .then((response) => {
+        if (!response.ok) throw new Error("商品データを読み込めませんでした。");
+        return response.json();
+      })
+      .then((products) => {
+        const product = products[id];
+        if (!product) throw new Error("商品が見つかりません。");
 
+        const images = product.images?.length
+          ? product.images
+          : [product.image].filter(Boolean);
 
+        const gallery = images.map((image) => `
+          <img class="detail-image" src="${escapeHtml(image)}" alt="${escapeHtml(product.name)}">
+        `).join("");
 
-<main id="detail" class="detail">
+        const sold = product.status === "SOLD OUT";
 
-</main>
+        detail.innerHTML = `
+          <a class="detail-back" href="index.html#collection">← 商品一覧へ戻る</a>
 
+          <div class="detail-layout">
+            <div class="detail-gallery">${gallery}</div>
 
+            <article class="detail-info">
+              <p class="eyebrow">${escapeHtml(product.brand)}</p>
+              <h1>${escapeHtml(product.name)}</h1>
+              <p class="detail-price">${escapeHtml(product.price)}</p>
 
-<footer>
+              <dl class="spec-list">
+                <div class="spec-row"><dt>カテゴリー</dt><dd>${escapeHtml(product.category)}</dd></div>
+                <div class="spec-row"><dt>年代</dt><dd>${escapeHtml(product.year)}</dd></div>
+                <div class="spec-row"><dt>状態</dt><dd>${escapeHtml(product.condition)}</dd></div>
+                <div class="spec-row"><dt>在庫</dt><dd>${escapeHtml(product.status)}</dd></div>
+              </dl>
 
-<p>
-© Shark Vintage Pens & Stationery
-</p>
+              <p>${escapeHtml(product.description)}</p>
 
-</footer>
+              ${sold
+                ? '<p class="status-badge sold" style="position:static;display:inline-block">SOLD OUT</p>'
+                : '<a class="primary-button" href="mailto:toranapalm@gmail.com?subject=Sharkの商品について">この商品について問い合わせる</a>'
+              }
+            </article>
+          </div>
+        `;
 
-
-<script>
-
-
-const id =
-new URLSearchParams(location.search)
-.get("id");
-
-
-
-fetch("products.json")
-
-.then(r=>r.json())
-
-.then(products=>{
-
-
-const p=products[id];
-
-
-document.getElementById("detail").innerHTML=`
-
-<h2>${p.name}</h2>
-
-
-let photos="";
-
-p.images.forEach(img=>{
-
-photos +=
-
-`
-<img class="gallery"
-src="${img}">
-`;
-
-});
-
-<h3>商品情報</h3>
-
-
-<p>
-ブランド：${p.brand}<br>
-年代：${p.year}<br>
-状態：${p.condition}<br>
-価格：${p.price}
-</p>
-
-
-<p>
-${p.description}
-</p>
-
-
-${p.sold ?
-"<h2 class='sold'>SOLD OUT</h2>"
-:
-"<button>お問い合わせ</button>"
-}
-
-
-`;
-
-});
-
-
-</script>
-
-
+        document.title = `${product.name} | Shark`;
+      })
+      .catch((error) => {
+        detail.innerHTML = `
+          <a class="detail-back" href="index.html">← ホームへ戻る</a>
+          <p>${escapeHtml(error.message)}</p>
+        `;
+      });
+  </script>
 </body>
-
 </html>

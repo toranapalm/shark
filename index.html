@@ -1,109 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-  
-<header class="site-header">
-  <a href="index.html" class="logo-link">
-    <img
-      src="images/shark-logo.png"
-      alt="Shark Vintage Pens & Stationery"
-      class="site-logo"
-    >
-  </a>
-</header>
-
-
-  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shark | Vintage Pens & Stationery</title>
+  <meta name="description" content="ヴィンテージ万年筆と文房具を扱うSharkの商品カタログです。">
+  <meta property="og:title" content="Shark | Vintage Pens & Stationery">
+  <meta property="og:description" content="時を超えて受け継がれる、書く道具との出会い。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Shark ホーム">
+        <img src="images/shark-logo.png" alt="Shark Vintage Pens & Stationery">
+      </a>
 
-<header>
-<h1>Shark</h1>
-<p>Vintage Pens & Stationery</p>
-</header>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        MENU
+      </button>
 
+      <nav id="site-nav" class="site-nav" aria-label="メインメニュー">
+        <a href="#home">HOME</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="hero">
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">VINTAGE WRITING INSTRUMENTS</p>
+        <h1>時を超えて受け継がれる、<br>書く道具との出会い。</h1>
+        <p class="hero-copy">
+          ヴィンテージ万年筆を中心に、一点物の筆記具と文房具をご紹介します。
+        </p>
+        <a class="primary-button" href="#collection">商品を見る</a>
+      </div>
+    </section>
 
-<h2>時を超えて受け継がれる<br>
-一本との出会い。</h2>
+    <section id="collection" class="section collection-section">
+      <div class="section-heading">
+        <p class="eyebrow">CURATED COLLECTION</p>
+        <h2>Collection</h2>
+        <p>一点ずつ状態を確認し、丁寧にご紹介しています。</p>
+      </div>
 
-<p>
-ヴィンテージ万年筆と文房具を中心に、
-一点物の筆記具をご紹介します。
-</p>
+      <div class="toolbar">
+        <label class="search-box">
+          <span class="sr-only">商品検索</span>
+          <input id="search-input" type="search" placeholder="商品名・ブランドで検索">
+        </label>
+        <div id="brand-filters" class="filters" aria-label="ブランド絞り込み"></div>
+      </div>
 
-</section>
+      <div id="products" class="products" aria-live="polite"></div>
+      <p id="empty-message" class="empty-message" hidden>該当する商品はありません。</p>
+    </section>
 
+    <section id="about" class="section about-section">
+      <div class="about-card">
+        <p class="eyebrow">ABOUT SHARK</p>
+        <h2>一期一会の一本を、次の持ち主へ。</h2>
+        <p>
+          Sharkは、ヴィンテージ万年筆や文房具の魅力を丁寧に伝えるカタログショップです。
+          中古品ならではの小傷や経年変化も含め、できる限り分かりやすく掲載します。
+        </p>
+      </div>
+    </section>
 
-<section>
+    <section id="contact" class="section contact-section">
+      <div class="contact-card">
+        <p class="eyebrow">CONTACT</p>
+        <h2>商品についてのお問い合わせ</h2>
+        <p>在庫状況、状態、購入方法など、お気軽にお問い合わせください。</p>
+        <a class="primary-button" href="mailto:toranapalm@gmail.com?subject=Sharkの商品について">メールで問い合わせる</a>
+      </div>
+    </section>
+  </main>
 
-<h2 class="title">
-Collection
-</h2>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Shark Vintage Pens & Stationery</p>
+  </footer>
 
-
-<div class="filter">
-
-<button onclick="filterBrand('all')">
-All
-</button>
-
-<button onclick="filterBrand('Pelikan')">
-Pelikan
-</button>
-
-<button onclick="filterBrand('PILOT')">
-PILOT
-</button>
-
-<button onclick="filterBrand('PARKER')">
-PARKER
-</button>
-
-<button onclick="filterBrand('Sailor')">
-Sailor
-</button>
-
-</div>
-<div id="products" class="products"></div>
-
-</section>
-<section class="contact">
-
-<h2>
-Contact
-</h2>
-
-
-<p>
-商品のお問い合わせはこちら
-</p>
-
-
-<a href="#">
-LINEで問い合わせ
-</a>
-
-
-<br>
-
-
-<a href="#">
-Instagram
-</a>
-
-
-</section>
-
-<footer>
-
-<p>
-© Shark Vintage Pens & Stationery
-</p>
-
-</footer>
-
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>

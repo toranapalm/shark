@@ -86,15 +86,14 @@ box-shadow:
 
 width:100%;
 
-height:auto;
-
-max-height:320px;
+height:380px;
 
 object-fit:contain;
 
-background:#ffffff;
+background:#fff;
 
 }
+
 
 
 .price {

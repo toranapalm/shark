@@ -1,8 +1,19 @@
-# Shark 完成版
+# Shark 修正版
 
-ZIPを展開し、GitHubの `shark` リポジトリへすべてアップロードしてください。
+商品データの読み込みを `products.json` の fetch 方式から、
+GitHub Pagesでより安定する `products.js` 方式へ変更しました。
 
-既存ファイルは上書きします。実商品画像 `images/products/146-4-1.jpg` がZIP内にない場合は、現在GitHubにある画像を残してください。
+## アップロード
+
+ZIPを展開し、GitHubの `shark` リポジトリへ全ファイルを上書きしてください。
+
+特に次の4ファイルは必ずアップロードしてください。
+
+- index.html
+- script.js
+- product.html
+- products.js
 
 コミット名:
-`Replace with complete Shark website`
+
+Fix product data loading

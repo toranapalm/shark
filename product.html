@@ -2,8 +2,49 @@
 <header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><img src="images/shark-logo.png" alt="Shark"></a><nav class="site-nav"><a href="index.html">HOME</a><a href="index.html#collection">COLLECTION</a><a href="shop.html">SHOP INFO</a></nav></div></header>
 <main id="detail" class="detail-page">読み込み中です。</main>
 <footer class="site-footer">© Shark</footer>
+<script src="products.js"></script>
 <script>
-const d=document.getElementById("detail"),id=Number(new URLSearchParams(location.search).get("id"));
-const e=v=>String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;");
-fetch("products.json").then(r=>r.json()).then(ps=>{const p=ps[id];if(!p)throw new Error();d.innerHTML=`<p><a href="index.html#collection">← 商品一覧へ戻る</a></p><div class="detail-layout"><div><img class="detail-image" src="${e(p.image)}" alt="${e(p.name)}"></div><article class="detail-info"><p class="eyebrow">${e(p.brand)}</p><h1>${e(p.name)}</h1><p class="price">${e(p.price)}</p><dl class="spec-list"><div class="spec-row"><dt>年代</dt><dd>${e(p.year)}</dd></div><div class="spec-row"><dt>状態</dt><dd>${e(p.condition)}</dd></div><div class="spec-row"><dt>在庫</dt><dd>${e(p.status)}</dd></div></dl><p>${e(p.description)}</p><a class="primary-button" href="mailto:shark1toranapalm@gmail.com?subject=${encodeURIComponent(p.name)}について">問い合わせる</a></article></div>`}).catch(()=>d.textContent="商品が見つかりません。");
+const detail = document.getElementById("detail");
+const id = Number(new URLSearchParams(location.search).get("id"));
+const products = Array.isArray(window.SHARK_PRODUCTS) ? window.SHARK_PRODUCTS : [];
+
+const esc = (value) => String(value ?? "")
+  .replace(/&/g, "&amp;")
+  .replace(/</g, "&lt;")
+  .replace(/>/g, "&gt;")
+  .replace(/"/g, "&quot;")
+  .replace(/'/g, "&#039;");
+
+const product = products[id];
+
+if (!product) {
+  detail.innerHTML = '<p><a href="index.html#collection">← 商品一覧へ戻る</a></p><p>商品が見つかりません。</p>';
+} else {
+  detail.innerHTML = `
+    <p><a href="index.html#collection">← 商品一覧へ戻る</a></p>
+    <div class="detail-layout">
+      <div>
+        <img
+          class="detail-image"
+          src="${esc(product.image)}"
+          alt="${esc(product.name)}"
+          onerror="this.onerror=null;this.src='images/shark-logo.png';"
+        >
+      </div>
+      <article class="detail-info">
+        <p class="eyebrow">${esc(product.brand)}</p>
+        <h1>${esc(product.name)}</h1>
+        <p class="price">${esc(product.price)}</p>
+        <dl class="spec-list">
+          <div class="spec-row"><dt>年代</dt><dd>${esc(product.year)}</dd></div>
+          <div class="spec-row"><dt>状態</dt><dd>${esc(product.condition)}</dd></div>
+          <div class="spec-row"><dt>在庫</dt><dd>${esc(product.status)}</dd></div>
+        </dl>
+        <p>${esc(product.description)}</p>
+        <a class="primary-button" href="mailto:shark1toranapalm@gmail.com?subject=${encodeURIComponent(product.name)}について">問い合わせる</a>
+      </article>
+    </div>
+  `;
+  document.title = `${product.name} | Shark`;
+}
 </script></body></html>

@@ -23,6 +23,7 @@
 
       <nav id="site-nav" class="site-nav" aria-label="メインメニュー">
         <a href="#home">HOME</a>
+        <a href="#featured">FEATURED</a>
         <a href="#collection">COLLECTION</a>
         <a href="#about">ABOUT</a>
         <a href="#contact">CONTACT</a>
@@ -38,8 +39,19 @@
         <p class="hero-copy">
           ヴィンテージ万年筆を中心に、一点物の筆記具と文房具をご紹介します。
         </p>
-        <a class="primary-button" href="#collection">商品を見る</a>
+        <div class="hero-actions">
+          <a class="primary-button" href="#collection">商品を見る</a>
+          <a class="secondary-button" href="#about">Sharkについて</a>
+        </div>
       </div>
+    </section>
+
+
+    <section id="featured" class="section featured-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">EDITOR'S PICK</p><h2>Featured</h2><p>今、特にご覧いただきたい一本です。</p>
+      </div>
+      <div id="featured-products" class="featured-products reveal"></div>
     </section>
 
     <section id="collection" class="section collection-section">
@@ -49,11 +61,12 @@
         <p>一点ずつ状態を確認し、丁寧にご紹介しています。</p>
       </div>
 
-      <div class="toolbar">
+      <div class="toolbar reveal">
         <label class="search-box">
           <span class="sr-only">商品検索</span>
           <input id="search-input" type="search" placeholder="商品名・ブランドで検索">
         </label>
+        <label class="sort-box"><span class="sr-only">並べ替え</span><select id="sort-select"><option value="newest">新着順</option><option value="price-asc">価格の安い順</option><option value="price-desc">価格の高い順</option><option value="name">商品名順</option></select></label>
         <div id="brand-filters" class="filters" aria-label="ブランド絞り込み"></div>
       </div>
 
@@ -85,6 +98,8 @@
   <footer class="site-footer">
     <p>© <span id="year"></span> Shark Vintage Pens & Stationery</p>
   </footer>
+
+  <div id="lightbox" class="lightbox" hidden><button id="lightbox-close" class="lightbox-close" type="button">×</button><img id="lightbox-image" src="" alt=""></div>
 
   <script src="script.js"></script>
 </body>

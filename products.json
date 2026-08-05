@@ -8,6 +8,9 @@
     "price": "720,000円",
     "status": "販売中",
     "image": "images/products/146-4-1.jpg",
-    "description": "ヴィンテージ万年筆です。商品の詳しい状態についてはお問い合わせください。"
+    "description": "ヴィンテージ万年筆です。商品の詳しい状態についてはお問い合わせください。",
+    "featured": true,
+    "new": true,
+    "sortDate": "2026-08-05"
   }
 ]

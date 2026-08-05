@@ -1,4 +1,171 @@
 [
+  
+  {
+    "name": "PILOT Elite 18K",
+    "brand": "PILOT",
+    "category": "万年筆",
+    "year": "1970年代",
+    "condition": "A（美品）",
+    "price": "5,800円",
+    "status": "販売中",
+    "image": "images/products/pilot-elite18k.jpg",
+    "description": "コンパクトサイズの人気モデル。18Kペン先。"
+  },
+  {
+    "name": "PARKER 45 Flighter",
+    "brand": "PARKER",
+    "category": "万年筆",
+    "year": "1980年代",
+    "condition": "A-",
+    "price": "8,800円",
+    "status": "販売中",
+    "image": "images/products/parker45.jpg",
+    "description": "ステンレスボディの定番モデル。"
+  },
+  {
+    "name": "PLATINUM #3776",
+    "brand": "PLATINUM",
+    "category": "万年筆",
+    "year": "1990年代",
+    "condition": "A",
+    "price": "12,800円",
+    "status": "販売中",
+    "image": "images/products/3776.jpg",
+    "description": "14Kペン先。人気の国産万年筆。"
+  },
+  {
+    "name": "SAILOR Profit 21",
+    "brand": "SAILOR",
+    "category": "万年筆",
+    "year": "2000年代",
+    "condition": "A",
+    "price": "18,000円",
+    "status": "販売中",
+    "image": "images/products/profit21.jpg",
+    "description": "21Kペン先。滑らかな書き味。"
+  },
+  {
+    "name": "Pelikan M200 Green",
+    "brand": "Pelikan",
+    "category": "万年筆",
+    "year": "1990年代",
+    "condition": "A",
+    "price": "22,000円",
+    "status": "販売中",
+    "image": "images/products/m200.jpg",
+    "description": "グリーンストライプの人気モデル。"
+  },
+  {
+    "name": "LAMY 2000",
+    "brand": "LAMY",
+    "category": "万年筆",
+    "year": "現行",
+    "condition": "A",
+    "price": "28,000円",
+    "status": "販売中",
+    "image": "images/products/lamy2000.jpg",
+    "description": "バウハウスデザインの名作。"
+  },
+  {
+    "name": "Waterman Carène",
+    "brand": "Waterman",
+    "category": "万年筆",
+    "year": "現行",
+    "condition": "A",
+    "price": "35,000円",
+    "status": "販売中",
+    "image": "images/products/carene.jpg",
+    "description": "美しい流線形デザイン。"
+  },
+  {
+    "name": "Pelikan M400 Green Stripe",
+    "brand": "Pelikan",
+    "category": "万年筆",
+    "year": "1980年代",
+    "condition": "A",
+    "price": "48,000円",
+    "status": "販売中",
+    "image": "images/products/m400.jpg",
+    "description": "14Cペン先。人気のヴィンテージ。"
+  },
+  {
+    "name": "PARKER Duofold Centennial",
+    "brand": "PARKER",
+    "category": "万年筆",
+    "year": "1990年代",
+    "condition": "A",
+    "price": "68,000円",
+    "status": "販売中",
+    "image": "images/products/duofold.jpg",
+    "description": "英国を代表するフラッグシップモデル。"
+  },
+  {
+    "name": "Montblanc Meisterstück 146",
+    "brand": "Montblanc",
+    "category": "万年筆",
+    "year": "1980年代",
+    "condition": "A",
+    "price": "88,000円",
+    "status": "販売中",
+    "image": "images/products/146.jpg",
+    "description": "14Cニブ搭載の人気モデル。"
+  },
+  {
+    "name": "Montblanc Meisterstück 149",
+    "brand": "Montblanc",
+    "category": "万年筆",
+    "year": "1970年代",
+    "condition": "A",
+    "price": "138,000円",
+    "status": "販売中",
+    "image": "images/products/149.jpg",
+    "description": "18Cニブ搭載。大型フラッグシップ。"
+  },
+  {
+    "name": "Pelikan Toledo M700",
+    "brand": "Pelikan",
+    "category": "万年筆",
+    "year": "1990年代",
+    "condition": "A",
+    "price": "180,000円",
+    "status": "販売中",
+    "image": "images/products/toledo.jpg",
+    "description": "銀装飾が美しい高級モデル。"
+  },
+  {
+    "name": "Namiki Yukari Royale",
+    "brand": "NAMIKI",
+    "category": "万年筆",
+    "year": "現行",
+    "condition": "A",
+    "price": "280,000円",
+    "status": "販売中",
+    "image": "images/products/yukari.jpg",
+    "description": "蒔絵仕上げの高級モデル。"
+  },
+  {
+    "name": "Montblanc Hemingway Limited Edition",
+    "brand": "Montblanc",
+    "category": "万年筆",
+    "year": "1992年",
+    "condition": "A",
+    "price": "398,000円",
+    "status": "販売中",
+    "image": "images/products/hemingway.jpg",
+    "description": "人気の作家シリーズ限定モデル。"
+  },
+  {
+    "name": "Montblanc 149 Celluloid",
+    "brand": "Montblanc",
+    "category": "万年筆",
+    "year": "1950年代",
+    "condition": "A",
+    "price": "498,000円",
+    "status": "販売中",
+    "image": "images/products/149-celluloid.jpg",
+    "description": "希少なヴィンテージセルロイドモデル。"
+  }
+
   {
     "name": "MONTBLANC 146",
     "brand": "MONTBLANC",

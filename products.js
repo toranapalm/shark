@@ -183,7 +183,7 @@ window.SHARK_PRODUCTS = [
     "name": "MONTBLANC 146",
     "brand": "MONTBLANC",
     "category": "万年筆",
-    "year": "ヴィンテージ",
+    "year": "希少限定レア",
     "condition": "A",
     "price": "720,000円",
     "status": "販売中",

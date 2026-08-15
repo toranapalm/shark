@@ -4,7 +4,7 @@ window.SHARK_PRODUCTS = [
     "brand": "PILOT",
     "category": "万年筆",
     "year": "1970年代",
-    "condition": "A（美品）",
+    "condition": "A",
     "price": "5,800円",
     "status": "販売中",
     "image": "images/products/pilot-elite18k.jpg",
@@ -16,7 +16,7 @@ window.SHARK_PRODUCTS = [
     "brand": "PARKER",
     "category": "万年筆",
     "year": "1980年代",
-    "condition": "A-",
+    "condition": "A",
     "price": "8,800円",
     "status": "販売中",
     "image": "images/products/parker45.jpg",
@@ -92,7 +92,7 @@ window.SHARK_PRODUCTS = [
     "price": "48,000円",
     "status": "販売中",
     "image": "images/products/m400.jpg",
-    "description": "14Cペン先。人気のヴィンテージ。",
+    "description": "14Cペン先。人気の一品。",
     "sortDate": "2026-07-28"
   },
   {
@@ -176,7 +176,7 @@ window.SHARK_PRODUCTS = [
     "price": "498,000円",
     "status": "販売中",
     "image": "images/products/149-celluloid.jpg",
-    "description": "希少なヴィンテージセルロイドモデル。",
+    "description": "希少なセルロイドモデル。",
     "sortDate": "2026-08-04"
   },
   {
@@ -184,11 +184,11 @@ window.SHARK_PRODUCTS = [
     "brand": "MONTBLANC",
     "category": "万年筆",
     "year": "ヴィンテージ",
-    "condition": "A（美品）",
+    "condition": "A",
     "price": "720,000円",
     "status": "販売中",
     "image": "images/products/146-4-1.jpg",
-    "description": "ヴィンテージ万年筆です。商品の詳しい状態についてはお問い合わせください。",
+    "description": "大変貴重な万年筆です。商品の詳しい状態についてはお問い合わせください。",
     "featured": true,
     "new": true,
     "sortDate": "2026-08-05"

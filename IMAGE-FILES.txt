@@ -1,0 +1,26 @@
+本番用ローカル画像ファイル名
+
+1. PILOT カスタム823 透明ブラック
+   images/products/pilot-custom823.jpg
+
+2. PILOT カスタム845 漆黒
+   images/products/pilot-custom845.jpg
+
+3. PLATINUM #3776 センチュリー Ver.2.0 DEMONSTRATOR
+   images/products/platinum-3776-v2-demonstrator.jpg
+
+4. SAILOR プロフェッショナルギア スリム21
+   images/products/sailor-professional-gear-slim21.jpg
+
+5. SAILOR プロフェッショナルギア 金
+   images/products/sailor-professional-gear-gold.jpg
+
+6. SAILOR プロフェッショナルギア 銀
+   images/products/sailor-professional-gear-silver.jpg
+
+7. SAILOR キングプロフィット エボナイト 長刀研ぎ
+   images/products/sailor-king-profit-ebonite-naginata.jpg
+
+この版は外部画像URLを完全に削除済みです。
+メーカー・正規代理店・仕入先から利用許諾を得た画像を上記ファイル名で
+images/products/ に入れるだけで表示されます。

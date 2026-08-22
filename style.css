@@ -67,3 +67,8 @@ footer{background:#10161c;color:#e8e8e8;padding:45px 5% 0}.footer-grid{display:g
 .photo img{width:100%;height:100%;object-fit:contain!important;object-position:center;background:#fff;padding:10px}
 .image-error{height:100%;display:grid;place-items:center;text-align:center;padding:20px;color:#777;font-size:12px}
 .source-note{font-size:10px;color:#777;line-height:1.4}
+
+/* supplied real-product image presentation */
+.photo{aspect-ratio:4/3;background:#fff;overflow:hidden}
+.photo img{display:block;width:100%;height:100%;object-fit:contain!important;object-position:center;padding:8px;background:#fff}
+.product-card h3{height:auto!important;min-height:46px;overflow:visible!important;white-space:normal!important}

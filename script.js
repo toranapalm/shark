@@ -1,18 +1,8 @@
-const ps = window.SHARK_PRODUCTS || [];
-const area = document.getElementById("products");
-
-area.innerHTML = ps.map(p => `
-  <article class="card">
-    <div class="product-image">
-      <img src="${p.image}" alt="${p.name}" loading="lazy">
-    </div>
-    <div class="body">
-      <p class="brand">${p.brand}</p>
-      <h3>${p.name}</h3>
-      <p>${p.desc}</p>
-      <p class="msrp">メーカー希望小売価格 ¥${p.msrp.toLocaleString()}</p>
-      <p class="price">SHARK価格 ¥${p.sale.toLocaleString()}（税込）</p>
-      <span class="prep">販売準備中</span>
-    </div>
-  </article>
-`).join("");
+const grid=document.getElementById('productGrid');
+grid.innerHTML=window.PRODUCTS.map(p=>`<article class="product-card">
+<div class="photo"><img src="${p.image}" alt="${p.brand} ${p.name}"></div>
+<div class="product-info"><span class="brand">${p.brand}</span><h3>${p.name}</h3>
+<p class="regular">通常価格　¥${p.msrp.toLocaleString()} <small>（税込）</small></p>
+<p class="shark-label">SHARK価格</p><p class="sale">¥${p.price.toLocaleString()} <small>（税込）</small></p>
+<button class="cart" type="button" onclick="alert('Stripe接続後に購入機能を有効化します。')">🛒 カートに入れる</button></div></article>`).join('');
+const btn=document.querySelector('.menu'),nav=document.querySelector('nav');btn.onclick=()=>nav.classList.toggle('open');

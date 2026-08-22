@@ -6,5 +6,5 @@ grid.innerHTML=window.PRODUCTS.map(p=>`<article class="product-card">
 <p class="regular">メーカー希望小売価格 ¥${p.msrp.toLocaleString()}（税込・JPY）</p>
 <p class="shark-label">SHARK価格</p><p class="sale">¥${p.price.toLocaleString()} <small>（税込・JPY）</small></p>
 <p class="source-note">商品照合：${p.source}</p>
-<button class="cart disabled" type="button" disabled>販売準備中</button></div></article>`).join('');
+<a class="cart inquiry-order" href="contact.html">在庫・ご購入について問い合わせる</a></div></article>`).join('');
 const btn=document.querySelector('.menu'),nav=document.querySelector('nav');if(btn)btn.onclick=()=>nav.classList.toggle('open');

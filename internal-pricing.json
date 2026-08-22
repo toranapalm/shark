@@ -1,0 +1,65 @@
+[
+  {
+    "brand": "PILOT",
+    "name": "カスタム823 透明ブラック",
+    "msrp_tax_included": 66000,
+    "estimated_procurement_55pct": 36300,
+    "shark_price_98pct_truncate_ones": 64680
+  },
+  {
+    "brand": "PILOT",
+    "name": "カスタム845 漆黒",
+    "msrp_tax_included": 132000,
+    "estimated_procurement_55pct": 72600,
+    "shark_price_98pct_truncate_ones": 129360
+  },
+  {
+    "brand": "PLATINUM",
+    "name": "#3776 センチュリー",
+    "msrp_tax_included": 44000,
+    "estimated_procurement_55pct": 24200,
+    "shark_price_98pct_truncate_ones": 43120
+  },
+  {
+    "brand": "PLATINUM",
+    "name": "#3776 センチュリー Ver.2.0 DEMONSTRATOR",
+    "msrp_tax_included": 49500,
+    "estimated_procurement_55pct": 27225,
+    "shark_price_98pct_truncate_ones": 48510
+  },
+  {
+    "brand": "PLATINUM",
+    "name": "#3776 センチュリー トラヴィア",
+    "msrp_tax_included": 110000,
+    "estimated_procurement_55pct": 60500,
+    "shark_price_98pct_truncate_ones": 107800
+  },
+  {
+    "brand": "SAILOR",
+    "name": "プロフェッショナルギア スリム 21 万年筆",
+    "msrp_tax_included": 66000,
+    "estimated_procurement_55pct": 36300,
+    "shark_price_98pct_truncate_ones": 64680
+  },
+  {
+    "brand": "SAILOR",
+    "name": "プロフェッショナルギア 銀 万年筆",
+    "msrp_tax_included": 77000,
+    "estimated_procurement_55pct": 42350,
+    "shark_price_98pct_truncate_ones": 75460
+  },
+  {
+    "brand": "SAILOR",
+    "name": "プロフェッショナルギア 金 万年筆",
+    "msrp_tax_included": 77000,
+    "estimated_procurement_55pct": 42350,
+    "shark_price_98pct_truncate_ones": 75460
+  },
+  {
+    "brand": "SAILOR",
+    "name": "キングプロフィット エボナイト 長刀研ぎ 万年筆",
+    "msrp_tax_included": 242000,
+    "estimated_procurement_55pct": 133100,
+    "shark_price_98pct_truncate_ones": 237160
+  }
+]

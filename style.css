@@ -49,3 +49,12 @@ footer{background:#10161c;color:#e8e8e8;padding:45px 5% 0}.footer-grid{display:g
   white-space:normal;
   overflow:visible;
 }
+
+.trust-strip{display:grid;grid-template-columns:repeat(4,1fr);max-width:1450px;margin:28px auto 0;border:1px solid var(--line);background:#fff}
+.trust-strip div{padding:14px;text-align:center;border-right:1px solid var(--line)}
+.trust-strip div:last-child{border-right:0}.trust-strip b,.trust-strip span{display:block}.trust-strip span{font-size:12px;margin-top:3px}
+.condition{display:inline-block;margin:0 0 8px;padding:2px 8px;border:1px solid #bbb;border-radius:999px;font-size:11px}
+.desc{font-size:12px;line-height:1.65;min-height:58px;color:#4e5660}
+.stock{font-size:11px;color:#777}.cart{display:block;text-align:center;text-decoration:none}
+.cart.disabled{opacity:.55;cursor:not-allowed}
+@media(max-width:720px){.trust-strip{grid-template-columns:1fr 1fr;margin:18px 14px 0}.trust-strip div{border-bottom:1px solid var(--line)}}
